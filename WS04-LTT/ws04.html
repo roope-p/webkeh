@@ -1,37 +1,82 @@
+<!DOCTYPE html>
 <html lang="fi">
     <head>
-        <title>Page Title</title>
-        <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+        <meta charset="UTF-8">
+        <title>Ensimmäinen HTML-sivu</title>
+        <style>
+            h2 {
+                color: green;
+            }
+        </style>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-    <header>
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#About"></a>About</li>
-                <li><a href="#Services"></a>Services</li>
-                <li><a href="#Contact"></a>Contact</li>
-            </ul>
-        </nav>
-    </header>   
-    <main>
-        <section id="About">
-            <h2>About Me</h2>
-            <p>This is a paragraph about me.</p>
-        </section>
-        <section id="Services">
-            <h2>Services</h2>
-            <p>This is a paragraph about services.</p>
-        </section>
-        <section id="Contact">
-            <h2>Contact</h2>
-            <p>This is a paragraph with contact information.</p>
-        </section>
-    </main>
+        <header>
+            <h1>My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about"></a>About</li>
+                    <li><a href="#services"></a>Services</li>
+                    <li><a href="#contact"></a>Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <h1 style="color: red;">Roope Puurula</h1>
+        <p>Tässä kohtaa pyydetään kuvaamaan itseä.</p>
+        <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t1.6435-1/103931082_3082080911873101_1363063919189900769_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=MYNr-n9bMxQQ7kNvwH8_Ojv&_nc_oc=Adku3TJIORwo5kyXlf1x5br6cQOu7ija5GOOsuKm_H4DPVIEA-XaKsG4MeSHKF_psnY&_nc_zt=24&_nc_ht=scontent.fqlf1-2.fna&_nc_gid=DJk3lD7nR89FwyAXc_8v_Q&oh=00_AfGfGOoQlQy82LI6g2rX8W0ik7em2dULhzSyuS0ljv-luw&oe=68245031" alt="a picture of me." width="128" height="128">
+        <main>
+            <section id="about">
+                <h2>Lista harrastuksista</h2>
+                <p>("About" linkkaa tähän osioon)</p>
+                <ol>
+                    <li>Kuorolaulu</li>
+                    <li>Viulunsoitto</li>
+                    <li>Videopelit</li>
+                </ol>
+                <h2>Esimerkkilista 2</h2>
+                <ul>
+                    <li>Ensimmäinen asia</li>
+                    <li>Toinen asia</li>
+                    <li>Kolmas asia</li>
+                </ul>        
+            </section>
+        </main>
+        <a href="https://www.laurea.fi">Linkki suosikkisivustolle</a>
+        <table>
+            <tr>
+                <th>Kurssin nimi</th>
+                <th>Lisätietoa</th>
+                <th>Vuosi</th>
+            </tr>
+            <tr>
+                <td>Kurssin 1 nimi</td>
+                <td>Lisätietoa</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>Kurssin 2 nimi</td>
+                <td>Lisätietoa</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>Kurssin 3 nimi</td>
+                <td>Lisätietoa</td>
+                <td>2025</td>
+            </tr>
+        </table>
+        <p><strong>Ota yhteyttä:</strong></p>
+        <form>
+            <label for="name>">Nimi:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Lähetä">
+        </form>
+        <p>Muita workshop 4 asioita:</p>
         <div class="flex-container">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
+            <div class="box">Laatikko1</div>
+            <div class="box">Laatikko2</div>
+            <div class="box">Laatikko3</div>
         </div>
         <div class="grid-container">
             <div class="grid-item">1</div>
@@ -42,8 +87,8 @@
             <div class="grid-item">6</div>
         </div>
         <div class="responsive-box">Resize the window to see the effect</div>
-    <footer>
-        <p>Copyright 2025</p>
-    </footer>
+        <footer>
+            <p>Copyright 2025</p>
+        </footer>
     </body>
 </html>
