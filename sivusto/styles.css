@@ -54,7 +54,6 @@
 
 .footer {
     text-align: center;
-    background-color: none;
     border-radius: 4px;
     opacity: 1;
     position: absolute;
@@ -84,13 +83,11 @@
     border-style: dashed;
     color: gainsboro;
     place-self: center;
-    text-align: 0;
     padding: 0;
 }
 
 .box-title {
     place-items: center;
-    text-align: 0;
 }
 
 .box-ul {
